@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(128, 128, 128, 0.5);
+}
+.container {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    background-color: rgba(4, 201, 201, 0.664);
+    width: 750px;
+    height: 750px;
+    margin: 90px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+}
+.container h1 {
+    position: relative;
+    top: 70%;
+    left: 60%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.container h1::after {
+    content: '';
+    position: absolute;
+    top: 45px;
+    left: -40px;
+    width: 220px;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(182, 255, 255, 0.185), rgb(255, 255, 255), rgb(255, 255, 255), rgba(182, 255, 255, 0.185));
+}
+.container .hero-container {
+    display: flex;
+    justify-content: center;
+}
+.container .hero-container .hero-img {
+    margin: 10px 40px 0;
+    cursor: pointer;
+}
+.container .hero-container .hero-img img {
+    width: 230px;
+    border-radius: 50%;
+}
+.container .hero-container .hero-img p {
+    margin: 0 60px;
+    font-family: 'tinos', serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+.container .hero-container .hero-text {
+    margin-top: 20px;
+    font-family: 'tinos', serif;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+.container .hero-container .hero-text button {
+    background-color: rgb(255, 94, 0);
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'tinos', serif;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
